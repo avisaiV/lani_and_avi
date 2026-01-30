@@ -142,3 +142,120 @@ h1 {
   color: var(--muted);
   font-size: 13px;
 }
+
+/* NAV */
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding-bottom:14px;
+  border-bottom:1px solid rgba(0,0,0,.06);
+  margin-bottom:14px;
+}
+.nav__logo{
+  text-decoration:none;
+  font-weight:900;
+  color:var(--text);
+}
+.nav__links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.nav__links a{
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:700;
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid transparent;
+  background:rgba(255,255,255,.35);
+}
+.nav__links a:hover{
+  border-color:rgba(0,0,0,.06);
+  color:var(--text);
+}
+.nav__links a.active{
+  color:var(--text);
+  border-color:rgba(0,0,0,.08);
+  background:rgba(255,255,255,.65);
+}
+
+/* PAGE HEADER */
+.pagehead{
+  margin-top:14px;
+}
+.pagehead h1{
+  margin:8px 0 6px;
+  font-size: clamp(28px, 4.5vw, 40px);
+}
+
+/* TIMELINE */
+.timeline{
+  position:relative;
+  margin-top:18px;
+  padding-left:18px;
+}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:7px;
+  top:8px;
+  bottom:8px;
+  width:2px;
+  background: linear-gradient(180deg, rgba(255,106,162,.55), rgba(106,167,255,.55));
+  border-radius:999px;
+}
+
+.event{
+  position:relative;
+  padding: 0 0 16px 0;
+}
+.event__dot{
+  position:absolute;
+  left:-2px;
+  top:10px;
+  width:18px;
+  height:18px;
+  border-radius:999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  box-shadow: 0 10px 20px rgba(0,0,0,.10);
+  border: 3px solid rgba(255,255,255,.9);
+}
+.event__content{
+  margin-left:22px;
+  padding:14px 14px;
+  border-radius:16px;
+  background: rgba(255,255,255,.62);
+  border: 1px solid rgba(0,0,0,.06);
+}
+.event__meta{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-bottom:6px;
+}
+.event__date{
+  font-weight:900;
+  font-size:12px;
+  color: var(--text);
+  padding:6px 10px;
+  border-radius:999px;
+  background: rgba(0,0,0,.04);
+}
+.event__tag{
+  font-weight:800;
+  font-size:12px;
+  color: var(--muted);
+}
+.event__title{
+  margin: 0 0 6px;
+  font-size:16px;
+}
+.event__text{
+  margin: 0;
+  color: var(--muted);
+  line-height:1.5;
+}
