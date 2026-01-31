@@ -10,18 +10,26 @@
 
   <body>
     <main class="card">
+      <nav class="nav">
+        <a class="nav__logo" href="index.html">Lani 💛</a>
+        <div class="nav__links">
+          <a class="active" href="index.html">Home</a>
+          <a href="memories.html">Memories</a>
+        </div>
+      </nav>
+
       <header class="hero">
         <div class="badge">for Lani</div>
         <h1>Hi Lani 💛</h1>
         <p class="sub">
-          I made this little corner of the internet for you.  
+          I made this little corner of the internet for you.
           Read it when you miss me (or when you want to smile).
         </p>
-      </header>
 
-<div class="actions">
-  <a class="btn" href="memories.html">Memories 📅</a>
-</div>
+        <div class="hero__cta">
+          <a class="btn" href="memories.html">Memories 📅</a>
+        </div>
+      </header>
 
       <section class="section">
         <h2>Things I love about you</h2>
@@ -46,7 +54,7 @@
 
       <section class="section">
         <h2>One small surprise</h2>
-        <button id="btn" class="btn">Tap me 👀</button>
+        <button id="btn" class="btn" type="button">Tap me 👀</button>
         <p id="msg" class="msg" aria-live="polite"></p>
       </section>
 
