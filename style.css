@@ -111,18 +111,28 @@ h1 {
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-decoration: none;   /* makes <a> look like a button */
   appearance: none;
   border: 0;
+
   padding: 12px 14px;
   border-radius: 14px;
   font-weight: 800;
   cursor: pointer;
+
   background: linear-gradient(90deg, var(--accent), var(--accent2));
   color: white;
   box-shadow: 0 10px 24px var(--ring);
   transition: transform .08s ease;
 }
+
 .btn:active { transform: translateY(1px) scale(.99); }
+
 
 .msg {
   margin: 12px 0 0;
@@ -259,3 +269,9 @@ h1 {
   color: var(--muted);
   line-height:1.5;
 }
+
+.actions{
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
